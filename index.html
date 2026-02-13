@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://fonts.cdnfonts.com/css/w95fa" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <title>be-my-valentine</title>
+  </head>
+  <body>
+    <script type="module" src="/src/main.js"></script>
+    <div id="app" style="display: flex; justify-content: center;">
+      <div class="window">
+        <div style="background-color: #0000AA; text-align: left; padding: 8px;">
+          be_my_valentine.exe
+        </div>
+        <div id="celebration" class="hidden">
+          <span class="animated-text">C ü later!</span>
+          <img src="https://gifzz.com/storage/gifs/K96QC7cHY9KVEcGdPNM31HBqVMyh0LJf6pLxdweP.gif" />
+        </div>
+        <div id="question" style="color: black; background-color: lightgrey; padding: 16px;">
+          <span style="font-size: 24px; margin: 16px;">Can you be my Valentine? &lt;3</span>
+          <div style="margin-top: 16px;">
+            <button id="yes" onclick="setupCelebration()"><span>Yes</span></button>
+            <button id="ok" onclick="setupCelebration()"><span>Ok</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
