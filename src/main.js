@@ -1,7 +1,7 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCelebration } from './counter.js'
+// import './style.css'
+// import javascriptLogo from './javascript.svg'
+// import viteLogo from '/vite.svg'
+// import { setupCelebration } from './counter.js'
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -21,6 +21,19 @@ import { setupCelebration } from './counter.js'
 //   </div>
 // `
 
-setupCelebration()
+// setupCelebration()
 
 // setupCounter(document.querySelector('#counter'))
+
+const celebrate = () => {
+  document.querySelector('#celebration').classList.remove("hidden");
+  document.querySelector('#question').classList.add("hidden");
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
+}
+
+document.querySelector('#yes').addEventListener('click', () => celebrate());
+document.querySelector('#ok').addEventListener('click', () => celebrate());
